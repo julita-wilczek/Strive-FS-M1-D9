@@ -3,7 +3,7 @@
 - Generate a user board with 24 randomized (and not repeated) numbers that that highlights as the main board does.
 - Add a function for the button to create as a user board
 - Add a function to allows creation of as many user boards as selected by the user
-// Randomized number should not be repeated
+
 */ 
 
 
@@ -27,15 +27,17 @@ function createBingoBoard() {
 }
 
 // Add a function for the button to create a randomized number from 1 to 76
-function randomNumberGenerator(){
-    let randomNumber = Math.round(Math.random()*76)
+function randomNumberGenerator(range){ // updated to range so it can be used also for creating user board
+    let randomNumber = Math.round(Math.random()*range)
     return randomNumber;
 }
+
+// TO-DO Randomized number should not be repeated
 
 // Once the number is generated the cell with the same number should be highlighted on the bingo board
 // The highlighted number need to stay highlighted
 function generateBingoNumber() {
-    let randomNumber = randomNumberGenerator()
+    let randomNumber = randomNumberGenerator(76)
     let bingoBoardCells = document.getElementsByClassName("number")
     let showNumberDiv = document.getElementById("show-generated-number")
     showNumberDiv.innerText = ""
@@ -44,5 +46,21 @@ function generateBingoNumber() {
         bingoBoardCell.classList.add("selected")
         showNumberDiv.innerText = "Number " + randomNumber;
     }
+    }
+}
+
+// Generate a user board with 24 randomized (and not repeated) numbers that that highlights as the main board does.
+
+function createUserBoard() {
+
+    let userBoard = document.getElementById("user-board")
+   
+
+    for (let userNumber = 0; userNumber<24; userNumber++){
+        let userBoardCell = document.createElement("div");
+        let randomNumber = randomNumberGenerator(24)
+        userBoardCell.innerText = randomNumber;
+        userBoardCell.classList.add("number");
+        userBoard.appendChild(userBoardCell); //Add the created bingo board to appropriate div in the html
     }
 }

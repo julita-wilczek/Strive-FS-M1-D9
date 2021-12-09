@@ -10,7 +10,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Nunito', sans-serif;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -32,14 +32,14 @@ h1 {
     font-weight: bold;
 }
 
-#bingo-container {
+#bingo {
     border-style: solid;
     border-width: 3px;
     border-color: #4a4a4a;
     padding: 12px;
     border-radius: 8px;
     display: inline-block;
-    width: 60%;
+    width: 80%;
 }
 
 .number {

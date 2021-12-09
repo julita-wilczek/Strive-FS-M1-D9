@@ -20,9 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title">Bingo</ht>
+    <h1 id="title">Bingo</h1>
     <div id = "bingo-board"></div>
+    <br>
     <button id="bingo-creation" onclick = generateBingoNumber()>Generate a Bingo number</button>
     <div id = "show-generated-number"></div>
+    <h1 id="title">User board</h1>
+    <input type= "text" placeholder="How many user boards to generate?"/>
+    <br>
+    <button id="user-board-creation" onclick = createUserBoard()>Generate User Board</button>
+    <div id = "user-board"></div>
 </body>
 </html>
