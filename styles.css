@@ -23,6 +23,15 @@ h1 {
     font-weight: bold;
 }
 
+#show-generated-number {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #e085dc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 #bingo-container {
     border-style: solid;
     border-width: 3px;

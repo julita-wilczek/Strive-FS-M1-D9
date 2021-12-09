@@ -32,16 +32,17 @@ function randomNumberGenerator(){
     return randomNumber;
 }
 
-
-
 // Once the number is generated the cell with the same number should be highlighted on the bingo board
 // The highlighted number need to stay highlighted
 function generateBingoNumber() {
     let randomNumber = randomNumberGenerator()
     let bingoBoardCells = document.getElementsByClassName("number")
+    let showNumberDiv = document.getElementById("show-generated-number")
+    showNumberDiv.innerText = ""
     for (let bingoBoardCell of bingoBoardCells){
     if ( randomNumber === parseInt(bingoBoardCell.innerText)) {
         bingoBoardCell.classList.add("selected")
+        showNumberDiv.innerText = "Number " + randomNumber;
     }
     }
 }
