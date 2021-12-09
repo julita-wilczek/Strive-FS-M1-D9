@@ -1,3 +1,11 @@
+/* TO DO CSS
+Style body
+Style bingo container
+Style regular bingo number
+Style selected bingo number
+Style buttons that generate numbers and user boards
+*/
+
 body {
     background-color: black;
     color: white;
@@ -46,7 +54,5 @@ h1 {
     background-color: #474747;
 }
 
-.number:hover {
-    border-color: gray;
-}
+
 
