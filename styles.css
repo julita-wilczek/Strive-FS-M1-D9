@@ -36,10 +36,10 @@ h1 {
 .number {
     background-color: rgb(26, 26, 26);
     display: inline-block;
-    width: 12.5%;
-    min-height: 64px;
+    width: 4.4%;
+    min-height: 10px;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 4px;
     font-size: x-large;
     border-color: rgb(49, 49, 49);
     border-style: solid;
