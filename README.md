@@ -1,5 +1,5 @@
 # strive-bingo-game
-Repository for Strive School Full Stack Course work, Module 1 Day 9
+Repository for Strive School Full Stack Course work, Module 1 Day 9 (December 9, 2021)
 
 Functionalities:
 1. Bingo Board with 76 cells, numbered from 1 to 76, is created programmatically (using JS)
