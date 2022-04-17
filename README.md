@@ -2,7 +2,7 @@
 Repository for Strive School Full Stack Course work, Module 1 Day 9
 
 Functionalities:
-1. Bino Board with 76 cells, numbered from 1 to 76, is created programmatically (using JS)
+1. Bingo Board with 76 cells, numbered from 1 to 76, is created programmatically (using JS)
 2. Click on a button to generate a number from 1 to 76. The cell with same number will be highlighted on the bingo board.
 3. Every time a new number is selected is different from the ones before. 
 4. User can generate a user board with 24 numbers that highlight as the main board does.
